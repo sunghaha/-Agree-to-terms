@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap{
+    width: 960px;
+    height: 870px;
+    margin: 10px auto;
+    /* border: 1px solid #000; */
+}
+/*//////////////// header#header 시작////////////////// */
+header#header_total{
+    /* border: 1px solid rgb(255, 0, 0); */
+    text-indent: 20px;
+}
+#header_total input#total_ckb{
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: 5px;
+}
+#header_total label{
+    font-size: 18px;
+    /* border: 1px solid rgb(0, 255, 128); */
+}
+/*//////////////// header#header 끝////////////////// */
+/*//////////////// main#main 시작////////////////// */
+
+#main .Terms_set{
+    margin: 40px 0;
+}
+#main>.Terms_set>h1{
+    margin: 13px 0;
+    font-size: 20px;
+    text-indent: 20px;
+}
+#main>.Terms_set>iframe{
+    border: 1px solid #aaa;
+}
+#main>.Terms_set p{
+    margin-top: 2px;
+    text-indent: 20px;
+    /* font-size: 16px; */
+}
+#main>.Terms_set input{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 4px;
+}
+/*//////////////// main#main 끝////////////////// */
+/*//////////////// footer#footer 시작////////////////// */
+footer#footer{
+    /* border: 1px solid rgb(255, 0, 0); */
+    text-align: center;
+    padding: 20px 0;
+}
+#footer>button{
+    padding: 5px 18px;
+    border: 1px solid #08f;
+    background-color: #08f;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+}
+/*//////////////// footer#footer 끝////////////////// */

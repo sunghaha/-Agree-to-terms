@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap" class="checkbox_group">
+      <header id="header_total">
+        <input type="checkbox" name="" id="total_ckb" />
+        <label for="total_ckb">
+          이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의
+          합니다.
+        </label>
+      </header>
+      <!-- header#header -->
+      <main id="main">
+        <div id="TOS" class="Terms_set">
+          <h1>[필수] 이용약관 동의</h1>
+          <iframe
+            src="TermsOfService_txt.html"
+            height="180"
+            width="950"
+            style="margin-left: 4px"
+          ></iframe>
+          <p>
+            <span>이용약관에 동의하십니까?</span>
+            <input type="checkbox" name="chkbox" id="TOS_ckb" class="check" />
+            <!-- 체크된 상태 checked 속성. 속성값이없음. 불리언타입 -->
+            <label for="TOS_ckb">동의함 (필수)</label>
+          </p>
+        </div>
+        <!--/////////////////div#TOS/////// TOS;Terms of service/////////// -->
+        <div id="Privacy" class="Terms_set">
+          <h1>[필수] 개인정보 수집 및 이용 동의</h1>
+          <iframe
+            src="Privacy_txt.html"
+            height="180"
+            width="950"
+            style="margin-left: 4px"
+          ></iframe>
+          <p>
+            <span>개인정보 수집 및 이용에 동의하십니까?</span>
+            <input
+              type="checkbox"
+              name="chkbox"
+              id="Privacy_ckb"
+              class="check"
+            />
+            <!-- 체크된 상태 checked 속성. 속성값이없음. 불리언타입 -->
+            <label for="Privacy_ckb">동의함 (필수)</label>
+          </p>
+        </div>
+        <!--/////////////////div#Privacy////////////////// -->
+        <div id="shopInf" class="Terms_set">
+          <h1>[선택] 쇼핑정보 수신 동의</h1>
+          <iframe
+            src="shoppingInformation_txt.html"
+            height="150"
+            width="950"
+            style="margin-left: 4px"
+          ></iframe>
+          <p>
+            <span>쇼핑정보 수신에 동의하십니까?</span>
+            <input
+              type="checkbox"
+              name="chkbox"
+              id="shopInf_ckb"
+              class="check"
+            />
+            <!-- 체크된 상태 checked 속성. 속성값이없음. 불리언타입 -->
+            <label for="shopInf_ckb">동의함 (선택)</label>
+          </p>
+        </div>
+        <!--/////////////////div#shopInf//////////////// -->
+      </main>
+      <!-- main#main -->
+      <footer id="footer">
+        <form action="#" method="post"></form>
+        <button type="submit" id="join">회원가입</button>
+      </footer>
+      <!-- footer#footer -->
+    </div>
+    <!-- div#wrap -->
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
