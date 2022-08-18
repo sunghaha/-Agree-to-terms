@@ -1,8 +1,3 @@
-// let input = 'input:checkbox[name="chkbox"]';
-let TOSckb = $("#TOS_ckb").is(":checked");
-let Privacyckb = $("#Privacy_ckb").is(":checked");
-let shopInfckb = $("shopInf_ckb").is(":checked");
-
 //////////// 개별체크박스 전체 선택 //////////
 let inputTotal = document.getElementsByName("chkbox");
 
@@ -22,20 +17,26 @@ $(inputTotal).click( function(){
     }
 });
 //////////// 개별 체크박스 모두 체크시 전체동의 체크박스 활성화 //////////
-// $(function(){
-    // let checked= $(inputTotal).each(function(){
-    //     $(this).is(":checked"); 
-    // });
-    if (TOSckb&&Privacyckb&&shopInfckb) {
-        $("#total_ckb").prop('checked', true);
-    }
-// });
+$(inputTotal).click(function(){
+ 
+    $(this).each(function(){
+        let TOSckb = $("#TOS_ckb").is(":checked");
+        let Privacyckb = $("#Privacy_ckb").is(":checked");
+        let shopInfckb = $("#shopInf_ckb").is(":checked");
+        if (TOSckb && Privacyckb && shopInfckb) {
+            // alert("Privacyckb : "+Privacyckb);
+            $("#total_ckb").prop('checked', true);
+        }
+    });
+});
+
 //////////// 필수동의 체크시 //////////
 
 $("#join").click(function(){
-    
+    let TOSckb = $("#TOS_ckb").is(":checked");
+    let Privacyckb = $("#Privacy_ckb").is(":checked");
     if ( TOSckb && Privacyckb ) {
-        $(this).prependTo(form);
+        $(this).prependTo("form");
     } else {
         alert("필수 약관 동의필요");
     }
